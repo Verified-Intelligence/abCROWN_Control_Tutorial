@@ -7,22 +7,16 @@ A Tutorial](https://arxiv.org/pdf/2605.26577). This repository contains a standa
 - `figures/`
 - `neural_lyapunov_dependency/pendulum_discrete_state_feedback_quadratic.pt`
 
+It provides code examples for various applications of α,β-CROWN in control problems, including reachability analysis, Lyapunov stability verification, and optimizing an MPC objective.
+
 ## 1) Install α,β-CROWN first
 
-The notebook imports `abcrown` directly, so install abcrown before running the notebook.
+The notebook imports `abcrown` directly, so install abcrown before running the notebook, following the command below.
 
-### Option A: Install from an existing local alpha-beta-CROWN checkout
-
-```bash
-cd /path/to/alpha-beta-CROWN
-# Create/activate your Python environment first (conda/venv).
-pip install -e .
-```
-
-### Option B: Fresh install from source
+### Install from source
 
 ```bash
-git clone https://github.com/Verified-Intelligence/alpha-beta-CROWN.git
+git clone --recursive https://github.com/Verified-Intelligence/alpha-beta-CROWN.git
 cd alpha-beta-CROWN
 # Create and activate a Python environment (example with conda):
 conda create -n abcrown python=3.11 -y
@@ -30,8 +24,6 @@ conda activate abcrown
 pip install -e .
 pip install matplotlib
 ```
-
-If you need CUDA-specific PyTorch builds or extra dependencies, follow the official installation notes in the alpha-beta-CROWN repository first, then run `pip install -e .`.
 
 ## Notes
 
