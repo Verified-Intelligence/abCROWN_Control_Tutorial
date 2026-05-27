@@ -1,6 +1,7 @@
 # α,β-CROWN Control Tutorial
 
-This repository contains a standalone control tutorial notebook and the assets it needs:
+This repo is the official repo for the ACC 2026 tutorial: [Bridging Control with Neural Network Verifier alpha-beta-CROWN:
+A Tutorial](https://arxiv.org/pdf/2605.26577). This repository contains a standalone control tutorial notebook and the assets it needs:
 
 - `control_tutorial.ipynb`
 - `figures/`
@@ -27,25 +28,10 @@ cd alpha-beta-CROWN
 conda create -n abcrown python=3.11 -y
 conda activate abcrown
 pip install -e .
+pip install matplotlib
 ```
 
 If you need CUDA-specific PyTorch builds or extra dependencies, follow the official installation notes in the alpha-beta-CROWN repository first, then run `pip install -e .`.
-
-## 2) Install notebook tooling
-
-```bash
-pip install jupyter matplotlib
-```
-
-## 3) Run the tutorial notebook
-
-From this repository root:
-
-```bash
-jupyter lab
-```
-
-Open `control_tutorial.ipynb` and run cells from top to bottom.
 
 ## Notes
 
