@@ -9,11 +9,9 @@ A Tutorial](https://arxiv.org/pdf/2605.26577). This repository contains a standa
 
 It provides code examples for various applications of α,β-CROWN in control problems, including reachability analysis, Lyapunov stability verification, and optimizing an MPC objective.
 
-## 1) Install α,β-CROWN first
+## Install α,β-CROWN first
 
 The notebook imports `abcrown` directly, so install abcrown before running the notebook, following the command below.
-
-### Install from source
 
 ```bash
 git clone --recursive https://github.com/Verified-Intelligence/alpha-beta-CROWN.git
