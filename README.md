@@ -1,13 +1,16 @@
 # α,β-CROWN Control Tutorial
 
-This repo accompanies the ACC 2026 tutorial: [Bridging Control with Neural Network Verifier alpha-beta-CROWN:
-A Tutorial](https://arxiv.org/pdf/2605.26577). This repository contains a standalone control tutorial notebook and the assets it needs:
+This repository accompanies the ACC 2026 tutorial: [Bridging Control with Neural Network Verifier α,β-CROWN: A Tutorial](https://arxiv.org/pdf/2605.26577).
+
+It provides a standalone tutorial notebook and the supporting assets needed to run the examples:
 
 - `control_tutorial.ipynb`
 - `figures/`
 - `neural_lyapunov_dependency/pendulum_discrete_state_feedback_quadratic.pt`
 
-It provides code examples to demonstrate various applications of α,β-CROWN in control problems, including reachability analysis, Lyapunov stability verification, and optimizing an MPC objective.
+The tutorial demonstrates several applications of α,β-CROWN to control problems, including reachability analysis, Lyapunov stability verification, and MPC objective optimization. Its goal is to show how α,β-CROWN can be used in control-oriented verification and optimization workflows, rather than to explain the underlying verification algorithms in detail.
+
+For readers interested in the neural network verification algorithms behind α,β-CROWN, a more detailed tutorial is available at [neural-network-verification.com](https://neural-network-verification.com/).
 
 ## 1. Install α,β-CROWN
 
