@@ -8,6 +8,8 @@ It provides a standalone tutorial notebook and the supporting assets needed to r
 - `figures/`
 - `neural_lyapunov_dependency/pendulum_discrete_state_feedback_quadratic.pt`
 
+### You can also run the notebook directly in [Google Colab](https://colab.research.google.com/drive/1DdExwiqzT0G3dozG3hmINDV3E7Rw0ZFR?usp=sharing).
+
 The tutorial demonstrates several applications of α,β-CROWN to control problems, including reachability analysis, Lyapunov stability verification, and MPC objective optimization. Its goal is to show how α,β-CROWN can be used in control-oriented verification and optimization workflows, rather than to explain the underlying verification algorithms in detail.
 
 For readers interested in the neural network verification algorithms behind α,β-CROWN, a more detailed tutorial is available at this [neural network verification tutorial](https://neural-network-verification.com/).
