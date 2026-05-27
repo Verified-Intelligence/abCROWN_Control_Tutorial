@@ -1,18 +1,53 @@
-# alpha-beta-CROWN Control Tutorial
+# α,β-CROWN Control Tutorial
 
-## Overview
+This repository contains a standalone control tutorial notebook and the assets it needs:
 
-This tutorial provides step-by-step guidance and examples for using auto_LiRPA and alpha-beta-CROWN in control research..
+- `control_tutorial.ipynb`
+- `figures/`
+- `neural_lyapunov_dependency/pendulum_discrete_state_feedback_quadratic.pt`
 
-## auto_LiRPA tutorial
-We demonstrate three control-related applications using auto_LiRPA. The control system used in these examples is a simplified version of the Van der Pol system from our paper: [Two-Stage Learning of Stabilizing Neural Controllers via Zubov Sampling and Iterative Domain Expansion](https://arxiv.org/abs/2506.01356).
+## 1) Install α,β-CROWN first
 
-## Scripts
-- ```bound_computation.py```: Builds a computation graph with the dynamical system and controller, and uses auto_LiRPA to directly compute bounds on the dynamics x_dot = f(x, u(x)).
+The notebook imports `abcrown` directly, so install abcrown before running the notebook.
 
-- ```linear_analysis.py```: Shows how to extract linear relaxations, including both coefficients and biases, from any computation graph using auto_LiRPA.
+### Option A: Install from an existing local alpha-beta-CROWN checkout
 
-- ```jacobian_bound.py```: Demonstrates how to compute bounds on a computation graph that includes Jacobian computations. In particular, it computes bounds for V_dot = grad(V) * f(x, u(x)), where V is the Lyapunov function of the system.
+```bash
+cd /path/to/alpha-beta-CROWN
+# Create/activate your Python environment first (conda/venv).
+pip install -e .
+```
 
-## alpha-beta-CROWN Demo
-See the [Google Colab Demo](https://colab.research.google.com/drive/150LrqbN69WQejq4vK90iIX3QohNc8Ja3?usp=sharing#scrollTo=7Ydr7V7_iBQ3) for a step-by-step demonstration of verifying an image classification problem, a Lyapunov stability problem, and a discrete robot reachability problem.
+### Option B: Fresh install from source
+
+```bash
+git clone https://github.com/Verified-Intelligence/alpha-beta-CROWN.git
+cd alpha-beta-CROWN
+# Create and activate a Python environment (example with conda):
+conda create -n abcrown python=3.11 -y
+conda activate abcrown
+pip install -e .
+```
+
+If you need CUDA-specific PyTorch builds or extra dependencies, follow the official installation notes in the alpha-beta-CROWN repository first, then run `pip install -e .`.
+
+## 2) Install notebook tooling
+
+```bash
+pip install jupyter matplotlib
+```
+
+## 3) Run the tutorial notebook
+
+From this repository root:
+
+```bash
+jupyter lab
+```
+
+Open `control_tutorial.ipynb` and run cells from top to bottom.
+
+## Notes
+
+- Paths in the notebook are relative to this repository root.
+- The included checkpoint and figures are already placed in the expected locations.
