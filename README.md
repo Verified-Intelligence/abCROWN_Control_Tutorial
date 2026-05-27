@@ -10,7 +10,7 @@ It provides a standalone tutorial notebook and the supporting assets needed to r
 
 The tutorial demonstrates several applications of α,β-CROWN to control problems, including reachability analysis, Lyapunov stability verification, and MPC objective optimization. Its goal is to show how α,β-CROWN can be used in control-oriented verification and optimization workflows, rather than to explain the underlying verification algorithms in detail.
 
-For readers interested in the neural network verification algorithms behind α,β-CROWN, a more detailed tutorial is available at [neural-network-verification.com](https://neural-network-verification.com/).
+For readers interested in the neural network verification algorithms behind α,β-CROWN, a more detailed tutorial is available at this [neural network verification tutorial](https://neural-network-verification.com/).
 
 ## 1. Install α,β-CROWN
 
