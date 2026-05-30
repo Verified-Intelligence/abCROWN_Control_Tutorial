@@ -40,3 +40,16 @@ control_tutorial.ipynb
 
 - The notebook is designed to be self-contained once α,β-CROWN is installed.
 - Paths in the notebook are relative to this repository root, and the included checkpoint and figures are already placed in the expected locations.
+
+## Citation
+
+If you find our tutorial useful, please consider citing our tutorial paper:
+
+```bibtex
+@article{li2026bridging,
+  title={Bridging Control with Neural Network Verifier alpha-beta-CROWN: A Tutorial},
+  author={Li, Haoyu and Zhong, Xiangru and Cheng, Hao and Hu, Bin and Zhang, Huan},
+  journal={arXiv preprint arXiv:2605.26577},
+  year={2026}
+}
+```
