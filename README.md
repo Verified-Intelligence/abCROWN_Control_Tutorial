@@ -43,7 +43,7 @@ control_tutorial.ipynb
 
 ## Citation
 
-If you find our tutorial useful, please consider citing our tutorial paper:
+If you find our tutorial or our new API useful, please consider citing our tutorial paper:
 
 ```bibtex
 @article{li2026bridging,
